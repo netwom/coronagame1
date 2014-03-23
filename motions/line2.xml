@@ -1,0 +1,14 @@
+<Motion duration="60" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="30" x="95" y="196.95" scaleX="1" scaleY="1" rotation="0" elementType="movie clip" symbolName="Symbol 2">
+			<dimensions>
+				<geom:Rectangle left="0" top="0" width="44" height="44"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5" y="0.5"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0"/>
+</Motion>

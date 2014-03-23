@@ -1,0 +1,29 @@
+settings =
+{
+    orientation =
+    {
+        default = "portrait",  --initial launch orientation
+        content = "portrait",  --locked orientation of the Corona stage, independent of Native UI elements (iOS only)
+        supported = { "portrait" },  --table of allowed options for auto-orientation
+    },
+    
+    plugins =
+	{
+		-- key is the name passed to Lua's 'require()'
+		["plugin.playhaven"] =
+		{
+			-- required
+			publisherId = "com.playhaven",
+		},
+		["CoronaProvider.ads.admob"] =
+        {
+            -- required
+            publisherId = "com.coronalabs",
+        },
+        ["plugin.carrot"] =
+        {
+            -- required
+            publisherId = "com.gocarrot",
+        },
+	},
+}

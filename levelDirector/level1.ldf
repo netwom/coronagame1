@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LDObjectLevelPack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>My Game</Name>
+  <Level>
+    <LDObjectLevel TargetWidth="480" TargetHeight="320" m_Target="0" m_GravityX="0" m_GravityY="9.8" m_marginX="128" m_marginY="128">
+      <Layers Name="New Layer" Visible="true" Id="50505996-90ae-4dd2-b0de-22b2025d8858" Count="1">
+        <LDObjectEllipse>
+          <Name>circle_1</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>272</X1>
+          <X2>354</X2>
+          <Y1>288</Y1>
+          <Y2>370</Y2>
+          <X>185</X>
+          <XT>185</XT>
+          <Y>201</Y>
+          <YT>201</YT>
+          <Width>82</Width>
+          <Height>82</Height>
+          <Angle>0</Angle>
+          <Id>d4e7c347-fd7c-4137-b567-0345345af10d</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName>Main Body</FixtureName>
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Round</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>41</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>0</assetWidth>
+          <assetHeight>0</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <Texture>
+            <Audio>false</Audio>
+            <ImageKey />
+            <ImageName />
+          </Texture>
+          <StrokeColorARGB>16777215</StrokeColorARGB>
+          <StrokeWidth>1</StrokeWidth>
+          <FillColorARGB>-6270419</FillColorARGB>
+        </LDObjectEllipse>
+        <UserProperties />
+        <GridX>16</GridX>
+        <GridY>16</GridY>
+        <SnapToGrid>true</SnapToGrid>
+        <ShowGrid>true</ShowGrid>
+        <ShowBodies>false</ShowBodies>
+        <ParallaxRepeat>false</ParallaxRepeat>
+        <ParallaxSpeedX>0</ParallaxSpeedX>
+        <ParallaxSpeedY>0</ParallaxSpeedY>
+      </Layers>
+      <WireFrame>false</WireFrame>
+      <Name>New Level</Name>
+      <BackColorARGB>-9868951</BackColorARGB>
+      <CanvasWidth>640</CanvasWidth>
+      <CanvasHeight>1036</CanvasHeight>
+      <Export>true</Export>
+      <ParallaxEnabled>false</ParallaxEnabled>
+      <ParallaxInfinite>false</ParallaxInfinite>
+      <ParallaxDamping>1</ParallaxDamping>
+      <MarginX>128</MarginX>
+      <MarginY>128</MarginY>
+      <UserProperties />
+      <DebugMode>Normal</DebugMode>
+      <GravityX>0</GravityX>
+      <GravityY>9.8</GravityY>
+      <PositionIterations>8</PositionIterations>
+      <VelocityIterations>3</VelocityIterations>
+    </LDObjectLevel>
+  </Level>
+  <ClassList />
+  <ZoomIndex>1</ZoomIndex>
+  <CurrentLevel>0</CurrentLevel>
+  <ExportFolder />
+  <ExportExtension>lua</ExportExtension>
+  <RelativePaths>true</RelativePaths>
+  <Graphics2>false</Graphics2>
+  <AnchorX>0</AnchorX>
+  <AnchorY>0</AnchorY>
+</LDObjectLevelPack>
