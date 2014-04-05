@@ -6,6 +6,8 @@ local config = require( 'appconfig' )
 local carrot = require "plugin.carrot"
 local facebook = require "facebook"
 
+local BTN_MOVE_TIME = 300
+
 local btnStart
 local btnMoreGames
 local btnPostFb
@@ -59,6 +61,18 @@ function scene.btnPostFbTouched(event)
         end
 end
 
+local function buttonAnimate(btn, toY)
+    local afterAnimationTime = 50
+    transition.to( btn, {transition=easing.inCubic, y = toY, time = BTN_MOVE_TIME, onComplete = function()
+        btn.anchorY = 1
+        transition.to( btn, {xScale = 1.1, yScale = 0.9, time = afterAnimationTime, onComplete = function()
+            transition.to( btn, {xScale = 0.9, yScale = 1.1, time = afterAnimationTime, onComplete = function()
+                transition.to( btn, {xScale = 1, yScale = 1, time = afterAnimationTime} )
+                end} )
+            end} )
+        end} )
+end
+
 
 ---------------------------------------------------------------------------------
 -- BEGINNING OF YOUR IMPLEMENTATION
@@ -69,18 +83,30 @@ function scene:createScene( event )
         local group = self.view
         btnStart = display.newImage( 'img/btn-start.png' )
         btnStart.x = display.contentWidth / 2
-        btnStart.y = display.contentHeight / 2
+        --btnStart.y = display.contentHeight / 2
+        btnStart.y = -100
         group:insert(btnStart)
+        timer.performWithDelay( BTN_MOVE_TIME * 3, function()
+            buttonAnimate(btnStart, display.contentHeight / 2 - 100)
+            end, 1 )
 
         btnMoreGames = display.newImage( 'img/more_games.png' )
         btnMoreGames.x = display.contentWidth / 2
-        btnMoreGames.y = display.contentHeight / 2 + 100
+        --btnMoreGames.y = display.contentHeight / 2 + 100
+        btnMoreGames.y = -100
         group:insert(btnMoreGames)
+        timer.performWithDelay( BTN_MOVE_TIME * 2, function()
+            buttonAnimate(btnMoreGames, display.contentHeight / 2)
+            end, 1 )
 
         btnPostFb =  display.newImage( 'img/fb-post.png' )
         btnPostFb.x = display.contentWidth / 2
-        btnPostFb.y = display.contentHeight / 2 + 200
+        --btnPostFb.y = display.contentHeight / 2 + 200
+        btnPostFb.y = -100
         group:insert(btnPostFb)
+        timer.performWithDelay( BTN_MOVE_TIME, function()
+            buttonAnimate(btnPostFb, display.contentHeight / 2 + 100)
+            end, 1 )
 
 
 

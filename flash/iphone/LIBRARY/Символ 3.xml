@@ -1,0 +1,35 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Символ 3" itemID="533c660b-000001ec" lastModified="1396467211" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Символ 3">
+      <layers>
+        <DOMLayer name="Слой 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!3286 1029S4|0 1029!0 1029|0 0!0 0|3286 0!3286 0|3286 1029"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="enemy3" selected="true" centerPoint3DX="82.15" centerPoint3DY="25.7">
+                  <transformationPoint>
+                    <Point x="82.15" y="25.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

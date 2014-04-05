@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Символ 2" itemID="533c655e-000001e1" lastModified="1396467038" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Символ 2">
+      <layers>
+        <DOMLayer name="Слой 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!1740 860S4|0 860!0 860|0 0!0 0|1740 0!1740 0|1740 860"/>
+                    <Edge cubics="!1740 0(;1740,0 1740,860 1740,860q1740 0 1740 860);"/>
+                    <Edge cubics="!0 860(;0,860 0,0 0,0q0 860 0 0);"/>
+                    <Edge cubics="!0 0(;0,0 1740,0 1740,0q0 0 1740 0);"/>
+                    <Edge cubics="!1740 860(;1740,860 0,860 0,860q1740 860 0 860);"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="enemy2" selected="true" centerPoint3DX="43.5" centerPoint3DY="21.5">
+                  <transformationPoint>
+                    <Point x="43.5" y="21.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

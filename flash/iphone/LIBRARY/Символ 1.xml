@@ -1,0 +1,35 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Символ 1" itemID="53255d08-000001d8" lastModified="1394957576" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Символ 1">
+      <layers>
+        <DOMLayer name="Слой 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!0 1159S4|0 0!0 0|1159 0!1159 0|1159 1159!1159 1159|0 1159"/>
+                  </edges>
+                </DOMShape>
+                <DOMSymbolInstance libraryItemName="sym1" selected="true" centerPoint3DX="28.95" centerPoint3DY="28.95">
+                  <transformationPoint>
+                    <Point x="28.95" y="28.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

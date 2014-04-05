@@ -124,8 +124,8 @@ function scene:addGameLogic()
         function allEnemiesDestroyed(event)
                 HeroClass.isFiring = false
                 enemies.destroy()
-                currentLevel = currentLevel + 1
-                self:addLevelPreview()
+                --currentLevel = currentLevel + 1
+                --self:addLevelPreview()
 
         end
         function enemyFireAdded(event)
@@ -166,6 +166,7 @@ function scene:createScene( event )
         end
 
         physics.start( )
+        physics.setDrawMode( 'hybrid' )
         physics.setGravity(0, 0)
 
         self:loadAssets()
@@ -173,8 +174,8 @@ function scene:createScene( event )
         self:addBackground()
         self:addControls()
         self:addHero()
-        self:addLevelPreview()
-        --self:addGameLogic()
+        --self:addLevelPreview()
+        self:addGameLogic()
 
         
 
@@ -240,7 +241,10 @@ function scene:exitScene( event )
 
         physics.stop()
 
-        timer.cancel( levelPreviewTimer )
+        if (levelPreviewTimer) then
+                timer.cancel( levelPreviewTimer )
+                levelPreviewTimer = nil
+        end
 
         -----------------------------------------------------------------------------
 

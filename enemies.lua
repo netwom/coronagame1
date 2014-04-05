@@ -11,18 +11,7 @@ local levelSpriteSheet
 local GLOBAL_ENEMY_SPEED = 1
 
 
-function CEnemies.enterFrame(event)
-	for i=1,#allEnemies do
-		local oneEnemy = allEnemies[i]
-		if (oneEnemy ~= nil and oneEnemy.isVisible) then
-			oneEnemy.y = oneEnemy.y + GLOBAL_ENEMY_SPEED
-		end
-		if (oneEnemy ~= nil and oneEnemy.isVisible and oneEnemy.y > 1236 ) then
-			oneEnemy:destroy()
-		end
-	end
 
-end
 
 local function onLocalCollision(self, event)
 	if (event.other.isWeapon) then
@@ -70,28 +59,8 @@ function CEnemies.createEnemies(levelId)
 	end
 	currentLevelObject.start()
 
-	function allEnemiesDestroyed()
-		local destroyed = true
-		for i=1,#enemies do
-			if (enemies[i].isVisible) then
-				destroyed = false
-			end
-		end
-		
-		if (destroyed) then
-			local event = {name = 'allEnemiesDestroyed'}
-			if (group) then
-				group:dispatchEvent( event )
-			end
-		end
-	end
-
-	checkEnemiesDestroyedTimer = timer.performWithDelay( 1000, allEnemiesDestroyed, -1 )
 	local enemyFire = CEnemies.enemyFire
 	currentLevelObject:addEventListener( 'enemyFire', enemyFire )
-
-	local enterFrameHandler = CEnemies.enterFrame
-	Runtime:addEventListener( "enterFrame", enterFrameHandler )
 
 	return group
 end
