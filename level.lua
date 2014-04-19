@@ -1,24 +1,29 @@
+require('history')
 local storyboard = require( 'storyboard' )
 local scene = storyboard.newScene( 'level' )
 local HeroClass = require( 'HeroClass' )
 local physics = require('physics')
 local enemies = require('enemies')
 require( "lib.tilebg" )
-local playhaven = require "plugin.playhaven"
+--local playhaven = require "plugin.playhaven"
 local config = require( 'appconfig' )
+local resources = require('resources')
+local background = require( 'background' )
 
-local ground
-local background1, background2
-local BACKGROUND_SPEED = 0.2
+local groundGroup
+local backObj
 local btnExit
 local hero
-local currentLevel = 1
 
 local levelSpriteSheet
 local explosionSpriteSheet
 local levelPreviewTimer
 
 local snapshot
+
+
+scene.selectedEpisodeId = 0
+scene.selectedLevelId = 0
 
 
 ----------------------------------------------------------------------------------
@@ -40,19 +45,13 @@ end
 
 function scene.btnExitTouched(event)
         if (event.phase == 'ended') then
-                storyboard.gotoScene( "mainmenu" )
+                storyboard.gotoScene( "levelselect", {effect = 'fade', params = {episodeId = scene.selectedEpisodeId}} )
                 storyboard.purgeScene( 'level' )
                 return true
         end
         return true
 end
 
-function scene:backgroundEnterFrame(event)
-        ground.y = ground.y + BACKGROUND_SPEED
-        if (ground.y >= display.contentHeight) then
-                ground.y = 0
-        end
-end
 
 function scene.loadAssets()
         local levelSheetObj = require('sprites.level')
@@ -61,7 +60,8 @@ function scene.loadAssets()
         local explosionSheetObj = require('sprites.explosion')
         explosionSpriteSheet = explosionSheetObj.getSpriteSheet()
 
-        print('load explosion sprite')
+        resources.loadLevel1Resources()
+
 end
 
 function scene.addRocketToScene(event)
@@ -71,26 +71,11 @@ end
 
 function scene:addBackground()
         local group = self.view
-        ground = display.newGroup()
-        self:resetAnchor(ground)
+        groundGroup = display.newGroup( )
 
-        local x, y = display.contentCenterX, display.contentCenterY
-        background1 = tileBG('img/back256.png', 256, 256)
-        
-        
-        self:resetAnchor(background1)
-        background1.x = 0
-        background1.y = 0
-        ground:insert(background1)
+        backObj = background.create(scene.selectedEpisodeId, groundGroup)
 
-        background2 = tileBG('img/back256.png', 256, 256)
-        
-        self:resetAnchor(background2)
-        background2.x = 0
-        background2.y = -display.contentHeight
-        ground:insert(background2)
-
-        group:insert(ground)
+        group:insert(groundGroup)
 end
 
 function scene:addControls()
@@ -118,13 +103,12 @@ end
 function scene:addGameLogic()
         local group = self.view
         enemies.init(levelSpriteSheet)
-        local enemyesGroup = enemies.createEnemies(currentLevel)
+        local enemyesGroup = enemies.createEnemies(self.selectedEpisodeId, self.selectedLevelId)
         group:insert(enemyesGroup)
         HeroClass.isFiring = true
         function allEnemiesDestroyed(event)
                 HeroClass.isFiring = false
                 enemies.destroy()
-                --currentLevel = currentLevel + 1
                 --self:addLevelPreview()
 
         end
@@ -138,7 +122,7 @@ end
 
 function scene:addLevelPreview()
         local group = self.view
-        local myText = display.newText("Level " .. currentLevel, display.contentWidth / 2, display.contentHeight / 2, native.systemFont, 36)
+        local myText = display.newText("Level ", display.contentWidth / 2, display.contentHeight / 2, native.systemFont, 36)
         transition.from( myText, {alpha = 0, delay = 1000} )
         group:insert(myText)
         function removePreview()
@@ -161,12 +145,16 @@ end
 function scene:createScene( event )
         local group = self.view
 
-        if (config.ads) then
-                playhaven.contentRequest("beforelevel", true)
-        end
+        self.selectedEpisodeId = event.params.episodeId
+        self.selectedLevelId = event.params.levelId
+
+
+        --if (config.ads) then
+        --        playhaven.contentRequest("beforelevel", true)
+        --end
 
         physics.start( )
-        physics.setDrawMode( 'hybrid' )
+        physics.setDrawMode( config.physicsMode )
         physics.setGravity(0, 0)
 
         self:loadAssets()
@@ -193,9 +181,6 @@ end
 function scene:willEnterScene( event )
         local group = self.view
 
-        local backgroundUpdate = scene.backgroundEnterFrame
-        Runtime:addEventListener( "enterFrame", backgroundUpdate )
-
         local btnExitTouched = scene.btnExitTouched
         btnExit:addEventListener( "touch", btnExitTouched )
 
@@ -221,6 +206,8 @@ function scene:enterScene( event )
         --      INSERT code here (e.g. start timers, load audio, start listeners, etc.)
 
         -----------------------------------------------------------------------------
+        history:setCurrent(history.SCREEN_LEVEL)
+        history:setLevelId(self.selectedLevelId)
 
 end
 
@@ -228,9 +215,6 @@ end
 -- Called when scene is about to move offscreen:
 function scene:exitScene( event )
         local group = self.view
-
-        local backgroundUpdate = scene.backgroundEnterFrame
-        Runtime:removeEventListener( "enterFrame", backgroundUpdate )
 
         local btnExitTouched = scene.btnExitTouched
         btnExit:removeEventListener( "touch", btnExitTouched )
@@ -245,6 +229,8 @@ function scene:exitScene( event )
                 timer.cancel( levelPreviewTimer )
                 levelPreviewTimer = nil
         end
+
+        backObj.destroy()
 
         -----------------------------------------------------------------------------
 

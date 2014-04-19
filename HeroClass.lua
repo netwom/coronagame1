@@ -9,9 +9,11 @@ local moveToX, moveToY
 local doMove = false
 local speed = 10
 local faultDistance = 5
-local weaponDelay = 300
+local weaponDelay = 200
 local timerId
+local weaponInterval = 40
 HClass.isFiring = false
+HClass.weaponNum = 1
 
 local levelSpriteSheet, explosionSpriteSheet
 
@@ -46,8 +48,10 @@ function HClass:enterFrame(event)
 			if (math.sqrt( (moveToX - hero.x) * (moveToX - hero.x) + (moveToY - hero.y) * (moveToY - hero.y) ) < faultDistance) then
 				doMove = false
 			else 
-				local toMoveX = (deltaX / ( math.abs(deltaX) + math.abs(deltaY))) * speed
-				local toMoveY = (deltaY / ( math.abs(deltaX) + math.abs(deltaY))) * speed
+				--local toMoveX = (deltaX / ( math.abs(deltaX) + math.abs(deltaY))) * speed
+				--local toMoveY = (deltaY / ( math.abs(deltaX) + math.abs(deltaY))) * speed
+				local toMoveX = deltaX / 6
+				local toMoveY = deltaY / 6
 
 				hero.x = math.round( hero.x + toMoveX ) 
 				hero.y = math.round( hero.y + toMoveY )
@@ -69,11 +73,19 @@ end
 
 function HClass.fire()
 	if (HClass.isFiring) then
-		local rocket = weapon.createRocket()
-		rocket.x = hero.x
-		rocket.y = hero.y
-		local event = {name="rocketCreated", item=rocket}
-		hero:dispatchEvent( event )
+		local sX = hero.x - ((HClass.weaponNum - 1) * weaponInterval) / 2
+		for i=1,HClass.weaponNum do
+			local rocket = weapon.createRocket()
+
+			local dX = (i - 1) * weaponInterval
+
+			rocket.x = sX + dX
+			rocket.y = hero.y
+			local event = {name="rocketCreated", item=rocket}
+			hero:dispatchEvent( event )	
+		end
+
+		
 	end
 end
 
@@ -82,7 +94,8 @@ end
 function HClass.createHero()
 	--hero = display.newRect( 0, 0, 50, 150 )
 	--width = 127, height = 98
-	hero = display.newImageRect(levelSpriteSheet, 1, 127, 98 )
+	--hero = display.newImageRect(levelSpriteSheet, 1, 127, 98 )
+	hero = display.newImage('img/hog.png' )
 	physics.addBody( hero, 'static', {filter = collisions.heroFilter } )
 	Runtime:addEventListener( "touch", HClass )
 	Runtime:addEventListener( "enterFrame", HClass )

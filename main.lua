@@ -1,7 +1,8 @@
 local storyboard = require( 'storyboard' )
-local playhaven = require "plugin.playhaven"
+--local playhaven = require "plugin.playhaven"
 display.setStatusBar( display.HiddenStatusBar )
 storyboard.gotoScene('mainmenu')
+--storyboard.gotoScene('level', {params = {episodeId = 1, levelId = 1}})
 local config = require( 'appconfig' )
 
 --display.setDrawMode( "wireframe", true )
@@ -12,7 +13,7 @@ if (config.debug) then
 	local function updateText()
 	    myText.txt = display.fps
 	end
-	 
+
 	Runtime:addEventListener("enterFrame", updateText)
 end
 
@@ -21,8 +22,8 @@ math.randomseed( os.time() )
 
 
 
-local playhavenListener = function(event)
-end
+--local playhavenListener = function(event)
+--end
 
 local init_options = {
     token = "82843c404ca547c5a08b60d0154a3d6a",
@@ -30,5 +31,5 @@ local init_options = {
     --closeButton = system.pathForFile("closeButton.png", system.ResourceDirectory),
     --closeButtonTouched = system.pathForFile("closeButtonTouched.png", system.ResourceDirectory)
 }
-playhaven.init(playhavenListener, init_options)
+--playhaven.init(playhavenListener, init_options)
 

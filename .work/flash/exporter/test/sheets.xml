@@ -1,0 +1,15 @@
+<Textures>
+  <TextureSheet name="darwinsheet">
+    <Texture name="darwin" width="484" height="714" path="darwinsheet/darwin.png" registrationPointX="64.00" registrationPointY="100.00" frameCount="28" frameWidth="121" frameHeight="102" columns="4"/>
+  </TextureSheet>
+  <TextureSheet name="godscores">
+    <Texture name="text" width="320" height="191" path="godscores/text.png" registrationPointX="140.00" registrationPointY="80.00" zIndex="4"/>
+    <Texture name="cloudfront" width="341" height="249" path="godscores/cloudfront.png" registrationPointX="171.00" registrationPointY="126.00" zIndex="3"/>
+    <Texture name="rainbow" width="236" height="236" path="godscores/rainbow.png" registrationPointX="118.00" registrationPointY="118.00" zIndex="2"/>
+    <Texture name="cloudback" width="336" height="256" path="godscores/cloudback.png" registrationPointX="168.00" registrationPointY="128.00" zIndex="1"/>
+    <Texture name="rays" width="503" height="503" path="godscores/rays.png" registrationPointX="251.00" registrationPointY="251.00"/>
+  </TextureSheet>
+  <TextureSheet name="leeksheet">
+    <Texture name="leek" width="67" height="193" path="leeksheet/leek.png" registrationPointX="13.00" registrationPointY="157.00"/>
+  </TextureSheet>
+</Textures>

@@ -4,9 +4,10 @@ local COneEnemy = {}
 
 function COneEnemy.create(startX, startY, type)
 	local enemy
-	enemy = display.newRect( startX - 10, startY - 40, 20, 80 )
-	enemy.anchorX = 0.5
-	enemy.anchorY = 0.5
+	--enemy = display.newRect( startX - 10, startY - 40, 20, 80 )
+	enemy = display.newImage( 'img/chicken.png')
+	enemy.x = -100
+	enemy.y = -100
 	local stepTime = 0
 
 	if (type == 1) then

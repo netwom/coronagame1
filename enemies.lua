@@ -44,10 +44,10 @@ function CEnemies.enemyFire(event)
 	group:dispatchEvent( eventFire )
 end
 
-function CEnemies.createEnemies(levelId)
+function CEnemies.createEnemies(episodeId, levelId)
 	group = display.newGroup()
 
-	currentLevelObject = require('level' .. levelId)
+	currentLevelObject = require('levels.episode'..episodeId..'.level' .. levelId)
 	currentLevelObject.init()
 	local enemies = currentLevelObject.getEnemies()
 

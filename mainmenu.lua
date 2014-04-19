@@ -1,9 +1,10 @@
 local storyboard = require( 'storyboard' )
+require('history')
 local scene = storyboard.newScene( 'mainmenu' )
-local playhaven = require "plugin.playhaven"
+--local playhaven = require "plugin.playhaven"
 local ads = require "ads"
 local config = require( 'appconfig' )
-local carrot = require "plugin.carrot"
+--local carrot = require "plugin.carrot"
 local facebook = require "facebook"
 
 local BTN_MOVE_TIME = 300
@@ -32,33 +33,34 @@ end
 
 function scene.btnStartTouched(event)
 	if(event.phase == 'ended') then
-		storyboard.gotoScene('level')
-                playhaven.setNotificationBadge({clear = true})
+		--storyboard.gotoScene('level')
+        storyboard.gotoScene('episodeselect', {effect = 'fade'})
+        --playhaven.setNotificationBadge({clear = true})
 	end
 end
 
 function scene.btnMoreGamesTouched(event)
-        if(event.phase == 'ended') then
-                playhaven.contentRequest("moregames", true)
-        end
+        --if(event.phase == 'ended') then
+        --        playhaven.contentRequest("moregames", true)
+        --end
 end
 
 function scene.btnPostFbTouched(event)
-        if(event.phase == 'ended') then
-                carrot.init("228891373981668", "bee51302cc1e74e807569fbcb28c24e1")
-                facebook.login("228891373981668", function(event)
-
-    -- If the login was successful, pass the user token to Carrot
-            if event.type == "session" and event.phase == "login" then
-
-                -- Pass user token to Carrot for validation.
-                carrot.validateUser(event.token)
-                --carrot.postAction("finish", "finishround")
-            end
-
-            -- The 'publish_actions' permission is required for Carrot functionality ('publish_stream' is a superset of 'publish_actions', but is deprecated).
-        end, {"publish_actions"})
-        end
+--        if(event.phase == 'ended') then
+--                carrot.init("228891373981668", "bee51302cc1e74e807569fbcb28c24e1")
+--                facebook.login("228891373981668", function(event)
+--
+--    -- If the login was successful, pass the user token to Carrot
+--            if event.type == "session" and event.phase == "login" then
+--
+--                -- Pass user token to Carrot for validation.
+--                carrot.validateUser(event.token)
+--                --carrot.postAction("finish", "finishround")
+--            end
+--
+--            -- The 'publish_actions' permission is required for Carrot functionality ('publish_stream' is a superset of 'publish_actions', but is deprecated).
+--        end, {"publish_actions"})
+--        end
 end
 
 local function buttonAnimate(btn, toY)
@@ -110,12 +112,12 @@ function scene:createScene( event )
 
 
 
-        playhaven.setNotificationBadge({x=btnMoreGames.x + 130, y=btnMoreGames.y - 40, clear=false, test=true, placement="moregames", orientation=system.orientation})
+        --playhaven.setNotificationBadge({x=btnMoreGames.x + 130, y=btnMoreGames.y - 40, clear=false, test=true, placement="moregames", orientation=system.orientation})
 
-        if (config.ads) then
-                ads.init( "admob", "ca-app-pub-0945737213584036/8213261791", adListener )
-                ads.show( "banner", { x=0, y=0 } )
-        end
+--        if (config.ads) then
+--                ads.init( "admob", "ca-app-pub-0945737213584036/8213261791", adListener )
+--                ads.show( "banner", { x=0, y=0 } )
+--        end
 
         -----------------------------------------------------------------------------
 
@@ -152,6 +154,8 @@ function scene:enterScene( event )
 
         local btnPostFbTouched = scene.btnPostFbTouched
         btnPostFb:addEventListener( "touch", btnPostFbTouched )
+
+        history:setCurrent(history.SCREEN_MENU)
 
         -----------------------------------------------------------------------------
 

@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LDObjectLevelPack xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>My Game</Name>
+  <Level>
+    <LDObjectLevel TargetWidth="640" TargetHeight="1136" m_Target="16" m_GravityX="0" m_GravityY="9.8" m_marginX="128" m_marginY="128">
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>33f6ec88-8289-4a17-8a8e-131a6901448f</Key>
+        <FileName>beam_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\beam.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>295</Width>
+        <Height>158</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>c771a121-e649-45bf-8789-9a3d8b40c33c</Key>
+        <FileName>bush_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\bush.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>249</Width>
+        <Height>207</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>3756d879-a9f7-4ed0-847a-0645c643fb4c</Key>
+        <FileName>callboard_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\callboard.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>275</Width>
+        <Height>254</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>940ed068-330f-4711-9e04-ad68413b7d80</Key>
+        <FileName>fence_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\fence.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>375</Width>
+        <Height>181</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>8345f3d0-37ab-4335-9856-516a2330a1b4</Key>
+        <FileName>grass1_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\grass1.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>306</Width>
+        <Height>204</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>2116b39a-7ea4-4ea1-bcac-3acf0b858186</Key>
+        <FileName>grave_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\grave.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>230</Width>
+        <Height>265</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>1ad2092c-6f21-45c1-98f2-b7df58974072</Key>
+        <FileName>plant_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\plant.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>253</Width>
+        <Height>239</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>821b4e9e-0bb1-4155-8bf6-e2cbc7f968df</Key>
+        <FileName>stone1_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\stone1.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>170</Width>
+        <Height>96</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>19919513-2f86-4eec-8471-87055edefcda</Key>
+        <FileName>stone2_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\stone2.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>223</Width>
+        <Height>138</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>7bd1ac92-9175-477d-8bd0-f0e983831cf1</Key>
+        <FileName>stump_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\stump.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>214</Width>
+        <Height>189</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>05af5449-6cbc-4033-903c-08aef800771d</Key>
+        <FileName>tree1_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\tree1.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>222</Width>
+        <Height>468</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>1855854a-e012-496f-b34d-94c59907e608</Key>
+        <FileName>tree2_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\tree2.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>247</Width>
+        <Height>412</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>202227b0-e688-4653-861f-252f40161bd7</Key>
+        <FileName>tree3_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\tree3.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>250</Width>
+        <Height>505</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>3260eebb-56ff-430b-8ad3-8231b3dc5b90</Key>
+        <FileName>trod_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\trod.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>282</Width>
+        <Height>318</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Assets>
+        <Audio>false</Audio>
+        <TexturePacker />
+        <TexturePackerXML />
+        <Key>259deab4-b15f-449f-a6ed-b4d7bcaab311</Key>
+        <FileName>wc_png</FileName>
+        <File>..\coronagame1\coronagame1\.work\texturepacker\background1\wc.png</File>
+        <AnchorX>0.5</AnchorX>
+        <AnchorY>0.5</AnchorY>
+        <ReferencePoint>Centre</ReferencePoint>
+        <Width>197</Width>
+        <Height>221</Height>
+        <Export>true</Export>
+        <Frame>0</Frame>
+        <FrameCount>0</FrameCount>
+        <X>0</X>
+        <Y>0</Y>
+        <TextureWidth>0</TextureWidth>
+        <TextureHeight>0</TextureHeight>
+        <oWidth>0</oWidth>
+        <oHeight>0</oHeight>
+        <oX>0</oX>
+        <oY>0</oY>
+        <Physics>
+          <IsEnabled>false</IsEnabled>
+          <FixtureName />
+          <LinkFixtures>true</LinkFixtures>
+          <BodyType>Static</BodyType>
+          <Density>1</Density>
+          <Friction>0</Friction>
+          <Bounce>0</Bounce>
+          <BodyShape>Rectangle</BodyShape>
+          <Polygons />
+          <IsSensor>false</IsSensor>
+          <Radius>0</Radius>
+          <AngularDamping>0</AngularDamping>
+          <LinearDamping>0</LinearDamping>
+          <FixedRotation>false</FixedRotation>
+          <IsSleepingAllowed>true</IsSleepingAllowed>
+          <IsBullet>false</IsBullet>
+          <GravityScale>1</GravityScale>
+          <CategoryBits>NotSet</CategoryBits>
+          <MaskBits>0</MaskBits>
+          <GroupIndex>0</GroupIndex>
+          <HandleCollision>false</HandleCollision>
+        </Physics>
+        <AnimSequence />
+        <ObjectClass />
+        <UserProperties />
+        <ComplexShape />
+      </Assets>
+      <Layers Name="New Layer" Visible="true" Id="46c09c25-1a40-4ab4-8bad-a13ec6465c94" Count="20">
+        <LDObjectImage>
+          <Name>img_1</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>224</X1>
+          <X2>421</X2>
+          <Y1>136</Y1>
+          <Y2>357</Y2>
+          <X>194</X>
+          <XT>194</XT>
+          <Y>118</Y>
+          <YT>118</YT>
+          <Width>197</Width>
+          <Height>221</Height>
+          <Angle>0</Angle>
+          <Id>b587192d-238f-44cd-95f7-03c979d35383</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>197</assetWidth>
+          <assetHeight>221</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>259deab4-b15f-449f-a6ed-b4d7bcaab311</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <LDObjectImage>
+          <Name>img_3</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>136</X1>
+          <X2>306</X2>
+          <Y1>342</Y1>
+          <Y2>438</Y2>
+          <X>93</X>
+          <XT>93</XT>
+          <Y>262</Y>
+          <YT>262</YT>
+          <Width>170</Width>
+          <Height>96</Height>
+          <Angle>0</Angle>
+          <Id>b6c9387d-a18d-494d-97d2-1b80edfa6ac8</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>170</assetWidth>
+          <assetHeight>96</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>821b4e9e-0bb1-4155-8bf6-e2cbc7f968df</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <LDObjectImage>
+          <Name>img_6</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>198</X1>
+          <X2>480</X2>
+          <Y1>416</Y1>
+          <Y2>734</Y2>
+          <X>211</X>
+          <XT>211</XT>
+          <Y>447</Y>
+          <YT>447</YT>
+          <Width>282</Width>
+          <Height>318</Height>
+          <Angle>0</Angle>
+          <Id>737f7ee5-af0c-447c-9da5-29127c5dadd5</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>282</assetWidth>
+          <assetHeight>318</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>3260eebb-56ff-430b-8ad3-8231b3dc5b90</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <LDObjectImage>
+          <Name>img_8</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>346</X1>
+          <X2>628</X2>
+          <Y1>666</Y1>
+          <Y2>984</Y2>
+          <X>359</X>
+          <XT>359</XT>
+          <Y>697</Y>
+          <YT>697</YT>
+          <Width>282</Width>
+          <Height>318</Height>
+          <Angle>0</Angle>
+          <Id>0e59174c-42c1-48f1-a3a2-b6dabbe17d7e</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>282</assetWidth>
+          <assetHeight>318</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>3260eebb-56ff-430b-8ad3-8231b3dc5b90</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <LDObjectImage>
+          <Name>img_10</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>290</X1>
+          <X2>572</X2>
+          <Y1>960</Y1>
+          <Y2>1278</Y2>
+          <X>303</X>
+          <XT>303</XT>
+          <Y>991</Y>
+          <YT>991</YT>
+          <Width>282</Width>
+          <Height>318</Height>
+          <Angle>0</Angle>
+          <Id>16ada5e5-f260-4d16-95fc-3913b7ef4b54</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>282</assetWidth>
+          <assetHeight>318</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>3260eebb-56ff-430b-8ad3-8231b3dc5b90</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <LDObjectImage>
+          <Name>img_14</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>194</X1>
+          <X2>408</X2>
+          <Y1>784</Y1>
+          <Y2>973</Y2>
+          <X>173</X>
+          <XT>173</XT>
+          <Y>750</Y>
+          <YT>750</YT>
+          <Width>214</Width>
+          <Height>189</Height>
+          <Angle>0</Angle>
+          <Id>127cd7a6-c5f8-440d-9423-e5036461bf50</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>214</assetWidth>
+          <assetHeight>189</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>7bd1ac92-9175-477d-8bd0-f0e983831cf1</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <LDObjectImage>
+          <Name>img_16</Name>
+          <Locked>false</Locked>
+          <Visible>true</Visible>
+          <BlendMode>Normal</BlendMode>
+          <Alpha>1</Alpha>
+          <AnchorX>0.5</AnchorX>
+          <AnchorY>0.5</AnchorY>
+          <ReferencePoint>Centre</ReferencePoint>
+          <X1>552</X1>
+          <X2>774</X2>
+          <Y1>126</Y1>
+          <Y2>594</Y2>
+          <X>535</X>
+          <XT>535</XT>
+          <Y>232</Y>
+          <YT>232</YT>
+          <Width>222</Width>
+          <Height>468</Height>
+          <Angle>0</Angle>
+          <Id>86fbbf65-f124-4de0-ab02-004405fa7650</Id>
+          <Physics>
+            <IsEnabled>false</IsEnabled>
+            <FixtureName />
+            <LinkFixtures>true</LinkFixtures>
+            <BodyType>Static</BodyType>
+            <Density>1</Density>
+            <Friction>0</Friction>
+            <Bounce>0</Bounce>
+            <BodyShape>Rectangle</BodyShape>
+            <Polygons />
+            <IsSensor>false</IsSensor>
+            <Radius>0</Radius>
+            <AngularDamping>0</AngularDamping>
+            <LinearDamping>0</LinearDamping>
+            <FixedRotation>false</FixedRotation>
+            <IsSleepingAllowed>true</IsSleepingAllowed>
+            <IsBullet>false</IsBullet>
+            <GravityScale>1</GravityScale>
+            <CategoryBits>NotSet</CategoryBits>
+            <MaskBits>0</MaskBits>
+            <GroupIndex>0</GroupIndex>
+            <HandleCollision>false</HandleCollision>
+          </Physics>
+          <ObjectClass />
+          <UserProperties />
+          <assetWidth>222</assetWidth>
+          <assetHeight>468</assetHeight>
+          <DragEvent>false</DragEvent>
+          <FollowPath>
+            <Path />
+            <Repeats>-1</Repeats>
+            <Rebound>false</Rebound>
+            <Delay>1</Delay>
+            <AutoStart>false</AutoStart>
+            <Rotate>false</Rotate>
+            <Direction>Forward</Direction>
+            <XFlip>false</XFlip>
+            <YFlip>false</YFlip>
+          </FollowPath>
+          <FlipX>false</FlipX>
+          <FlipY>false</FlipY>
+          <AssetKey>05af5449-6cbc-4033-903c-08aef800771d</AssetKey>
+          <ComplexShape />
+        </LDObjectImage>
+        <UserProperties />
+        <GridX>16</GridX>
+        <GridY>16</GridY>
+        <SnapToGrid>false</SnapToGrid>
+        <ShowGrid>false</ShowGrid>
+        <ShowBodies>false</ShowBodies>
+        <ParallaxRepeat>false</ParallaxRepeat>
+        <ParallaxSpeedX>0</ParallaxSpeedX>
+        <ParallaxSpeedY>0</ParallaxSpeedY>
+      </Layers>
+      <WireFrame>false</WireFrame>
+      <Name>New Level</Name>
+      <BackColorARGB>-9868951</BackColorARGB>
+      <CanvasWidth>640</CanvasWidth>
+      <CanvasHeight>1136</CanvasHeight>
+      <Export>true</Export>
+      <ParallaxEnabled>false</ParallaxEnabled>
+      <ParallaxInfinite>false</ParallaxInfinite>
+      <ParallaxDamping>1</ParallaxDamping>
+      <MarginX>128</MarginX>
+      <MarginY>128</MarginY>
+      <UserProperties />
+      <DebugMode>Normal</DebugMode>
+      <GravityX>0</GravityX>
+      <GravityY>9.8</GravityY>
+      <PositionIterations>8</PositionIterations>
+      <VelocityIterations>3</VelocityIterations>
+    </LDObjectLevel>
+  </Level>
+  <ClassList />
+  <ZoomIndex>1</ZoomIndex>
+  <CurrentLevel>0</CurrentLevel>
+  <ExportFolder />
+  <ExportExtension>lua</ExportExtension>
+  <RelativePaths>true</RelativePaths>
+  <Graphics2>true</Graphics2>
+  <AnchorX>0.5</AnchorX>
+  <AnchorY>0.5</AnchorY>
+</LDObjectLevelPack>

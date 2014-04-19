@@ -2,7 +2,7 @@ local collisions = require('collisions')
 local physics = require('physics')
 
 local CWeapon = {}
-local weaponSpeed = 1000
+local weaponSpeed = 2500
 local timerId
 local weaponSheet
 
@@ -36,13 +36,21 @@ function CWeapon.explode(x, y)
 	timerId = timer.performWithDelay( timeout, removeObject, 1)
 end
 
-function CWeapon.createRocket()
+function CWeapon.createRocket(scale)
+	scale = scale or 0.5
 	--local weapon = display.newRect( 0, 0, 20, 50 )
 	local weapon = display.newGroup()
-	local weaponItem = display.newImageRect(weaponSheet, 2, 13, 35 )
+	--local weaponItem = display.newImageRect(weaponSheet, 2, 13, 35 )
+
+	local weaponItem = display.newImage('img/bullet.png' )
+
 	weapon:insert(weaponItem)
-	weapon.strength = 1
+	weapon.strength = 2
 	weapon.isWeapon = true
+
+	weapon.xScale = scale
+	weapon.yScale = scale
+
 	physics.addBody( weapon, { filter = collisions.weaponFilter} )
 	weapon:setLinearVelocity(0, -weaponSpeed)
 	table.insert( allWeapons, weapon )

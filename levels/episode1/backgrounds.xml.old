@@ -1,0 +1,121 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="640" height="2272" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" viewAngle3D="62.4108334222142" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+     <media>
+          <DOMBitmapItem name="beam.png" itemID="53526be5-000001d6" sourceExternalFilepath="./LIBRARY/beam.png" sourceLastImported="1397503707" externalFileCRC32="2579441448" externalFileSize="34345" originalCompressionType="lossless" quality="50" href="beam.png" bitmapDataHRef="M 1 1397910501.dat" frameRight="5900" frameBottom="3160"/>
+          <DOMBitmapItem name="bush.png" itemID="53526be5-000001db" sourceExternalFilepath="./LIBRARY/bush.png" sourceLastImported="1397503575" externalFileCRC32="3409510718" externalFileSize="46387" originalCompressionType="lossless" quality="50" href="bush.png" bitmapDataHRef="M 2 1397910501.dat" frameRight="4980" frameBottom="4140"/>
+          <DOMBitmapItem name="callboard.png" itemID="53526be5-000001e0" sourceExternalFilepath="./LIBRARY/callboard.png" sourceLastImported="1397503908" externalFileCRC32="1152490803" externalFileSize="69394" originalCompressionType="lossless" quality="50" href="callboard.png" bitmapDataHRef="M 3 1397910501.dat" frameRight="5500" frameBottom="5080"/>
+          <DOMBitmapItem name="fence.png" itemID="53526be5-000001e5" sourceExternalFilepath="./LIBRARY/fence.png" sourceLastImported="1397503608" externalFileCRC32="1487266149" externalFileSize="49669" originalCompressionType="lossless" quality="50" href="fence.png" bitmapDataHRef="M 4 1397910501.dat" frameRight="7500" frameBottom="3620"/>
+          <DOMBitmapItem name="grass1.png" itemID="53526be5-000001ea" sourceExternalFilepath="./LIBRARY/grass1.png" sourceLastImported="1397503634" externalFileCRC32="3129664294" externalFileSize="56150" originalCompressionType="lossless" quality="50" href="grass1.png" bitmapDataHRef="M 5 1397910501.dat" frameRight="6120" frameBottom="4080"/>
+          <DOMBitmapItem name="grave.png" itemID="53526be5-000001ef" sourceExternalFilepath="./LIBRARY/grave.png" sourceLastImported="1397503528" externalFileCRC32="4183065382" externalFileSize="41759" originalCompressionType="lossless" quality="50" href="grave.png" bitmapDataHRef="M 6 1397910501.dat" frameRight="4600" frameBottom="5300"/>
+          <DOMBitmapItem name="plant.png" itemID="53526be5-000001f4" sourceExternalFilepath="./LIBRARY/plant.png" sourceLastImported="1397504032" externalFileCRC32="2231759750" externalFileSize="47696" originalCompressionType="lossless" quality="50" href="plant.png" bitmapDataHRef="M 7 1397910501.dat" frameRight="5060" frameBottom="4780"/>
+          <DOMBitmapItem name="stone1.png" itemID="53526be5-000001f9" sourceExternalFilepath="./LIBRARY/stone1.png" sourceLastImported="1397503970" externalFileCRC32="2087495387" externalFileSize="18200" originalCompressionType="lossless" quality="50" href="stone1.png" bitmapDataHRef="M 8 1397910501.dat" frameRight="3400" frameBottom="1920"/>
+          <DOMBitmapItem name="stone2.png" itemID="53526be5-000001fe" sourceExternalFilepath="./LIBRARY/stone2.png" sourceLastImported="1397504053" externalFileCRC32="3693056256" externalFileSize="34184" originalCompressionType="lossless" quality="50" href="stone2.png" bitmapDataHRef="M 9 1397910501.dat" frameRight="4460" frameBottom="2760"/>
+          <DOMBitmapItem name="stump.png" itemID="53526be5-00000203" sourceExternalFilepath="./LIBRARY/stump.png" sourceLastImported="1397503663" externalFileCRC32="2058500901" externalFileSize="37117" originalCompressionType="lossless" quality="50" href="stump.png" bitmapDataHRef="M 10 1397910501.dat" frameRight="4280" frameBottom="3780"/>
+          <DOMBitmapItem name="tree1.png" itemID="53526be5-00000208" sourceExternalFilepath="./LIBRARY/tree1.png" sourceLastImported="1397503733" externalFileCRC32="1670451698" externalFileSize="51874" originalCompressionType="lossless" quality="50" href="tree1.png" bitmapDataHRef="M 11 1397910501.dat" frameRight="4440" frameBottom="9360"/>
+          <DOMBitmapItem name="tree2.png" itemID="53526be5-0000020d" sourceExternalFilepath="./LIBRARY/tree2.png" sourceLastImported="1397503754" externalFileCRC32="3230090977" externalFileSize="53309" originalCompressionType="lossless" quality="50" href="tree2.png" bitmapDataHRef="M 12 1397910501.dat" frameRight="4940" frameBottom="8240"/>
+          <DOMBitmapItem name="tree3.png" itemID="53526be5-00000212" sourceExternalFilepath="./LIBRARY/tree3.png" sourceLastImported="1397503782" externalFileCRC32="2788221537" externalFileSize="63839" originalCompressionType="lossless" quality="50" href="tree3.png" bitmapDataHRef="M 13 1397910501.dat" frameRight="5000" frameBottom="10100"/>
+          <DOMBitmapItem name="trod.png" itemID="53526be5-00000217" sourceExternalFilepath="./LIBRARY/trod.png" sourceLastImported="1397503861" externalFileCRC32="975965237" externalFileSize="79923" originalCompressionType="lossless" quality="50" href="trod.png" bitmapDataHRef="M 14 1397910501.dat" frameRight="5640" frameBottom="6360"/>
+          <DOMBitmapItem name="wc.png" itemID="53526be5-0000021c" sourceExternalFilepath="./LIBRARY/wc.png" sourceLastImported="1397503939" externalFileCRC32="523512062" externalFileSize="39633" originalCompressionType="lossless" quality="50" href="wc.png" bitmapDataHRef="M 15 1397910501.dat" frameRight="3940" frameBottom="4420"/>
+     </media>
+     <symbols/>
+     <timelines>
+          <DOMTimeline name="Монтажный кадр 1">
+               <layers>
+                    <DOMLayer name="Variant1" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" name="frame1" labelType="name" keyMode="9728">
+                                   <elements>
+                                        <DOMBitmapInstance selected="true" libraryItemName="grass1.png">
+                                             <matrix>
+                                                  <Matrix tx="318.85" ty="823.7"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="wc.png">
+                                             <matrix>
+                                                  <Matrix tx="443" ty="731.6"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="trod.png">
+                                             <matrix>
+                                                  <Matrix ty="552.8"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="trod.png">
+                                             <matrix>
+                                                  <Matrix tx="138.9" ty="346.85"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="trod.png">
+                                             <matrix>
+                                                  <Matrix tx="-17.1" ty="120.95"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="stump.png">
+                                             <matrix>
+                                                  <Matrix tx="-10.7" ty="353.35"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="bush.png">
+                                             <matrix>
+                                                  <Matrix tx="387.3" ty="16.5"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="fence.png">
+                                             <matrix>
+                                                  <Matrix tx="290.3" ty="103.8"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="tree2.png">
+                                             <matrix>
+                                                  <Matrix tx="22.8" ty="1537.7"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="tree2.png">
+                                             <matrix>
+                                                  <Matrix tx="142.75" ty="1635.65"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="tree2.png">
+                                             <matrix>
+                                                  <Matrix tx="58.75" ty="1815.65"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="tree1.png">
+                                             <matrix>
+                                                  <Matrix tx="228.85" ty="1805.25"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="grave.png">
+                                             <matrix>
+                                                  <Matrix tx="373.15" ty="1523.25"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="grass1.png">
+                                             <matrix>
+                                                  <Matrix tx="-25.05" ty="1255.5"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="grass1.png">
+                                             <matrix>
+                                                  <Matrix tx="172.85" ty="1195.55"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="grass1.png">
+                                             <matrix>
+                                                  <Matrix tx="376.8" ty="1147.55"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMBitmapInstance selected="true" libraryItemName="bush.png">
+                                             <matrix>
+                                                  <Matrix tx="169.35" ty="1274"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory/>
+</DOMDocument>

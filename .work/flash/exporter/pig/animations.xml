@@ -1,0 +1,74 @@
+<Animations>
+  <Animation name="testFrames" frameCount="29">
+    <Part name="lEye">
+      <Frame x="-30.30" y="-64.75" scaleX="0.581" scaleY="0.581" rotation="-5.677" index="26"/>
+      <Frame x="-30.80" y="-50.75" index="27"/>
+    </Part>
+    <Part name="lHand">
+      <Frame x="-61.50" y="-60.55" index="0"/>
+      <Frame x="-61.80" y="-60.10" scaleX="1.005" scaleY="0.993" rotation="-0.807" index="1"/>
+      <Frame x="-62.20" y="-59.70" scaleX="1.010" scaleY="0.986" rotation="-1.803" index="2"/>
+      <Frame x="-62.50" y="-59.25" scaleX="1.015" scaleY="0.978" rotation="-2.797" index="3"/>
+      <Frame x="-62.75" y="-58.80" scaleX="1.020" scaleY="0.971" rotation="-3.791" index="4"/>
+      <Frame x="-63.05" y="-58.40" scaleX="1.025" scaleY="0.964" rotation="-4.786" index="5"/>
+      <Frame x="-63.40" y="-57.95" scaleX="1.030" scaleY="0.957" rotation="-5.782" index="6"/>
+      <Frame x="-63.70" y="-57.50" scaleX="1.035" scaleY="0.950" rotation="-6.850" index="7"/>
+      <Frame x="-63.40" y="-57.95" scaleX="1.030" scaleY="0.957" rotation="-5.781" index="8"/>
+      <Frame x="-63.05" y="-58.35" scaleX="1.025" scaleY="0.964" rotation="-4.786" index="9"/>
+      <Frame x="-62.75" y="-58.85" scaleX="1.020" scaleY="0.971" rotation="-3.791" index="10"/>
+      <Frame x="-62.40" y="-59.25" scaleX="1.015" scaleY="0.978" rotation="-2.797" index="11"/>
+      <Frame x="-62.15" y="-59.70" scaleX="1.010" scaleY="0.985" rotation="-1.803" index="12"/>
+      <Frame x="-61.80" y="-60.10" scaleX="1.005" scaleY="0.993" rotation="-0.808" index="13"/>
+      <Frame x="-61.50" y="-60.55" index="14"/>
+      <Frame x="-61.50" y="-60.55" index="15"/>
+      <Frame x="-61.25" y="-56.80" scaleX="1.014" scaleY="0.980" rotation="-6.300" index="16"/>
+      <Frame x="-60.95" y="-53.05" scaleX="1.028" scaleY="0.961" rotation="-12.790" index="17"/>
+      <Frame x="-60.75" y="-49.30" scaleX="1.041" scaleY="0.941" rotation="-19.285" index="18"/>
+      <Frame x="-60.50" y="-45.55" scaleX="1.056" scaleY="0.923" rotation="-25.744" index="19"/>
+      <Frame x="-61.50" y="-60.55" index="20"/>
+      <Frame x="-63.30" y="-59.65" scaleX="1.012" scaleY="1.014" rotation="-2.507" index="21"/>
+      <Frame x="-65.20" y="-58.70" scaleX="1.024" scaleY="1.028" rotation="-5.015" index="22"/>
+      <Frame x="-67.10" y="-57.80" scaleX="1.036" scaleY="1.042" rotation="-7.523" index="23"/>
+      <Frame x="-68.95" y="-56.90" scaleX="1.048" scaleY="1.057" rotation="-10.110" index="24"/>
+      <Frame x="-61.50" y="-60.55" index="25"/>
+      <Frame x="-65.75" y="-51.85" scaleX="1.107" scaleY="0.976" rotation="-13.524" index="26"/>
+      <Frame x="-70.05" y="-43.10" scaleX="1.215" scaleY="0.954" rotation="-27.109" index="27"/>
+      <Frame x="-61.50" y="-60.55" index="28"/>
+    </Part>
+    <Part name="rEye">
+      <Frame x="36.15" y="-67.25" scaleX="0.582" scaleY="0.582" rotation="-166.511" index="26"/>
+      <Frame x="34.65" y="-49.75" rotation="-180.000" index="27"/>
+    </Part>
+    <Part name="rHand">
+      <Frame x="62.95" y="-60.55" index="0"/>
+      <Frame x="63.25" y="-60.10" scaleX="1.005" scaleY="0.993" rotation="1.057" index="1"/>
+      <Frame x="63.55" y="-59.65" scaleX="1.010" scaleY="0.985" rotation="2.302" index="2"/>
+      <Frame x="63.90" y="-59.25" scaleX="1.015" scaleY="0.978" rotation="3.547" index="3"/>
+      <Frame x="64.20" y="-58.80" scaleX="1.020" scaleY="0.971" rotation="4.791" index="4"/>
+      <Frame x="64.55" y="-58.35" scaleX="1.025" scaleY="0.964" rotation="6.037" index="5"/>
+      <Frame x="64.85" y="-57.90" scaleX="1.030" scaleY="0.956" rotation="7.283" index="6"/>
+      <Frame x="65.15" y="-57.50" scaleX="1.035" scaleY="0.950" rotation="8.596" index="7"/>
+      <Frame x="64.90" y="-57.95" scaleX="1.030" scaleY="0.956" rotation="7.282" index="8"/>
+      <Frame x="64.50" y="-58.35" scaleX="1.025" scaleY="0.964" rotation="6.038" index="9"/>
+      <Frame x="64.25" y="-58.80" scaleX="1.020" scaleY="0.971" rotation="4.792" index="10"/>
+      <Frame x="63.90" y="-59.20" scaleX="1.015" scaleY="0.978" rotation="3.547" index="11"/>
+      <Frame x="63.60" y="-59.75" scaleX="1.010" scaleY="0.985" rotation="2.301" index="12"/>
+      <Frame x="63.35" y="-60.10" scaleX="1.005" scaleY="0.993" rotation="1.056" index="13"/>
+      <Frame x="62.95" y="-60.55" index="14"/>
+      <Frame x="62.95" y="-60.55" index="15"/>
+      <Frame x="66.95" y="-61.15" rotation="3.002" index="16"/>
+      <Frame x="70.95" y="-61.80" rotation="6.003" index="17"/>
+      <Frame x="74.95" y="-62.40" rotation="9.007" index="18"/>
+      <Frame x="78.95" y="-63.05" rotation="12.014" index="19"/>
+      <Frame x="62.95" y="-60.55" index="20"/>
+      <Frame x="61.95" y="-58.30" rotation="5.564" index="21"/>
+      <Frame x="61.00" y="-56.05" scaleX="0.999" scaleY="0.999" rotation="11.318" index="22"/>
+      <Frame x="60.00" y="-53.85" scaleX="0.999" scaleY="0.999" rotation="17.076" index="23"/>
+      <Frame x="59.00" y="-51.60" rotation="22.990" index="24"/>
+      <Frame x="62.95" y="-60.55" index="25"/>
+      <Frame x="69.45" y="-53.70" scaleX="1.076" scaleY="0.977" rotation="14.765" index="26"/>
+      <Frame x="75.95" y="-46.90" scaleX="1.154" scaleY="0.956" rotation="29.527" index="27"/>
+      <Frame x="62.95" y="-60.55" index="28"/>
+    </Part>
+  </Animation>
+</Animations>

@@ -1,5 +1,6 @@
 local appconfig = {
-	ads = true,
-	debug = true
+	ads = false,
+	debug = true,
+	physicsMode = 'normal'
 }
 return appconfig
