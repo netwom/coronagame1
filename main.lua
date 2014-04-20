@@ -1,8 +1,8 @@
 local storyboard = require( 'storyboard' )
 --local playhaven = require "plugin.playhaven"
 display.setStatusBar( display.HiddenStatusBar )
---storyboard.gotoScene('mainmenu')
-storyboard.gotoScene('level', {params = {episodeId = 1, levelId = 1}})
+storyboard.gotoScene('mainmenu')
+--storyboard.gotoScene('level', {params = {episodeId = 1, levelId = 1}})
 --storyboard.gotoScene('test')
 local config = require( 'appconfig' )
 

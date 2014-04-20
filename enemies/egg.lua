@@ -30,6 +30,7 @@ function egg.create()
 
 			local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
 			weaponLayer:insert(weapon)
+			weapon.isEnemyWeapon = true
 
 			weapon.x = enemy.x
 			weapon.y = enemy.y

@@ -20,6 +20,19 @@ local levelSpriteSheet, explosionSpriteSheet
 
 local function onLocalCollision(self, event)
 	if(event.other.isEnemyWeapon) then
+		hero:setSequence( 'bited' )
+		hero:play()
+
+		function hero.spriteEvent(event)
+			if (event.phase == 'ended' and event.target.sequence == 'bited') then
+				hero:setSequence( 'fly' )
+				hero:play()
+				hero:removeEventListener( 'sprite', hero.spriteEvent )
+			end
+		end
+
+		hero:addEventListener( 'sprite', hero.spriteEvent )
+
 		event.other:removeSelf()
 	end
 end
@@ -46,10 +59,10 @@ function HClass:enterFrame(event)
 		local deltaX = moveToX - hero.x
 		local deltaY = moveToY - hero.y
 
-		if (deltaX > 0 and hero.sequence ~= 'flyRight') then
+		if (deltaX > 0 and hero.sequence ~= 'flyRight' and hero.sequence ~= 'bited') then
 			hero:setSequence('flyRight')
 			hero:play()
-		elseif (deltaX < 0 and hero.sequence ~= 'flyLeft') then
+		elseif (deltaX < 0 and hero.sequence ~= 'flyLeft' and hero.sequence ~= 'bited') then
 			hero:setSequence('flyLeft')
 			hero:play()
 		end
@@ -112,8 +125,9 @@ function HClass.createHero()
 	local pigSheet, pigData = resources.loadPigResources()
 	hero = display.newSprite( pigSheet, {
 		{name = 'fly', start = 1, count = 15, time = 500},
-		{name = 'flyLeft', start = 21, count = 5, loopCount = 1, time = 300},
-		{name = 'flyRight', start = 16, count = 5, loopCount = 1, time = 300},
+		{name = 'flyLeft', start = 21, count = 5, loopCount = 1, time = 300, time=300},
+		{name = 'flyRight', start = 16, count = 5, loopCount = 1, time = 300, time=300},
+		{name = 'bited', start = 27, count = 2, time = 150, loopDirection = 'bounce', loopCount = 1}
 	}
 	)
 	hero:setSequence( 'fly' )
