@@ -9,6 +9,7 @@ require( "lib.tilebg" )
 local config = require( 'appconfig' )
 local resources = require('resources')
 local background = require( 'background' )
+local levelLayers = require( 'levellayers' )
 
 local groundGroup
 local backObj
@@ -66,7 +67,8 @@ end
 
 function scene.addRocketToScene(event)
         local group = scene.view
-        group:insert(event.item)
+        local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
+        weaponLayer:insert(event.item)
 end
 
 function scene:addBackground()
@@ -75,7 +77,9 @@ function scene:addBackground()
 
         backObj = background.create(scene.selectedEpisodeId, groundGroup)
 
-        group:insert(groundGroup)
+        local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
+
+        backgroundLayer:insert(groundGroup)
 end
 
 function scene:addControls()
@@ -95,7 +99,9 @@ function scene:addHero()
         hero = HeroClass.createHero()
         hero.x = display.contentWidth / 2
         hero.y = display.contentHeight - 100
-        group:insert(hero)
+        local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
+        heroLayer:insert(hero)
+        --group:insert(heroLayer)
         local rocketCreatedListener = scene.addRocketToScene
         hero:addEventListener( "rocketCreated", rocketCreatedListener )
 end
@@ -103,8 +109,9 @@ end
 function scene:addGameLogic()
         local group = self.view
         enemies.init(levelSpriteSheet)
+        local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
         local enemyesGroup = enemies.createEnemies(self.selectedEpisodeId, self.selectedLevelId)
-        group:insert(enemyesGroup)
+        enemiesLayer:insert(enemyesGroup)
         HeroClass.isFiring = true
         function allEnemiesDestroyed(event)
                 HeroClass.isFiring = false
@@ -113,7 +120,7 @@ function scene:addGameLogic()
 
         end
         function enemyFireAdded(event)
-                group:insert(event.item)
+                weaponLayer:insert(event.item)
         end
         enemyesGroup:addEventListener( 'allEnemiesDestroyed', allEnemiesDestroyed )
         enemyesGroup:addEventListener( 'enemyFireAdded', enemyFireAdded )
@@ -145,8 +152,17 @@ end
 function scene:createScene( event )
         local group = self.view
 
+        local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
+        group:insert(backgroundLayer)
+        group:insert(enemiesLayer)
+        group:insert(weaponLayer)
+        group:insert(heroLayer)
+        
+        group:insert(explosionLayer)
+
         self.selectedEpisodeId = event.params.episodeId
         self.selectedLevelId = event.params.levelId
+
 
 
         --if (config.ads) then
@@ -221,6 +237,7 @@ function scene:exitScene( event )
 
         HeroClass.destroyHero()
 
+
         enemies.destroy()
 
         physics.stop()
@@ -231,6 +248,7 @@ function scene:exitScene( event )
         end
 
         backObj.destroy()
+        levelLayers.clear()
 
         -----------------------------------------------------------------------------
 

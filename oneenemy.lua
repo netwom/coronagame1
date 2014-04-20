@@ -1,28 +1,34 @@
 local collisions = require('collisions')
 
+
 local COneEnemy = {}
 
 function COneEnemy.create(startX, startY, type)
 	local enemy
 	--enemy = display.newRect( startX - 10, startY - 40, 20, 80 )
-	enemy = display.newImage( 'img/chicken.png')
+
+	
+
+	--enemy = display.newImage( 'img/chicken.png')
+	
+
+	if (type == 1) then
+		enemy = require('enemies.chicken').create()
+	elseif(type == 2) then
+		enemy = require('enemies.egg').create()
+	elseif(type == 3) then
+		enemy = require('enemies.egg').create()
+	elseif(type == 4) then
+		enemy = require('enemies.egg').create()
+	elseif(type == 5) then
+		enemy = require('enemies.egg').create()
+	elseif(type == 6) then
+		enemy = require('enemies.egg').create()
+	end
+
 	enemy.x = -100
 	enemy.y = -100
 	local stepTime = 0
-
-	if (type == 1) then
-		enemy:setFillColor( 1, 0, 0 )
-	elseif(type == 2) then
-		enemy:setFillColor( 0, 1, 0 )
-	elseif(type == 3) then
-		enemy:setFillColor( 0, 0, 1 )
-	elseif(type == 4) then
-		enemy:setFillColor( 1, 1, 0 )
-	elseif(type == 5) then
-		enemy:setFillColor( 1, 0, 1 )
-	elseif(type == 6) then
-		enemy:setFillColor( 0, 1, 1 )
-	end
 
 	function enemy:setMoving(moving, time)
 		self.moving = {x = {}, y = {}, r ={}}
@@ -40,6 +46,9 @@ function COneEnemy.create(startX, startY, type)
 	end
 
 	function enemy:startMoving()
+		if (self.startFiring and self.movingStep == 1 ) then
+			self.startFiring()
+		end
 		self.movingStep = self.movingStep + 1
 		if (self.moving.x[self.movingStep]) then
 			transition.to( self, {
@@ -56,10 +65,7 @@ function COneEnemy.create(startX, startY, type)
 		
 	end
 
-	function enemy:destroy()
-		self.isActive = false;
-		self:removeSelf()
-	end
+	
 
 	enemy.health = 5
 	physics.addBody( enemy, 'static', { filter=collisions.enemyFilter } )

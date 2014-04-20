@@ -1,3 +1,4 @@
+local resources = require('resources')
 local collisions = require('collisions')
 local timer = require('timer')
 local weapon = require('weapon')
@@ -44,14 +45,26 @@ function HClass:enterFrame(event)
 	if (doMove and hero.x and hero.y) then
 		local deltaX = moveToX - hero.x
 		local deltaY = moveToY - hero.y
+
+		if (deltaX > 0 and hero.sequence ~= 'flyRight') then
+			hero:setSequence('flyRight')
+			hero:play()
+		elseif (deltaX < 0 and hero.sequence ~= 'flyLeft') then
+			hero:setSequence('flyLeft')
+			hero:play()
+		end
+
 		if (deltaX ~= 0 or deltaY ~= 0) then
 			if (math.sqrt( (moveToX - hero.x) * (moveToX - hero.x) + (moveToY - hero.y) * (moveToY - hero.y) ) < faultDistance) then
 				doMove = false
+				hero:setSequence('fly')
+				hero:play()
 			else 
 				--local toMoveX = (deltaX / ( math.abs(deltaX) + math.abs(deltaY))) * speed
 				--local toMoveY = (deltaY / ( math.abs(deltaX) + math.abs(deltaY))) * speed
 				local toMoveX = deltaX / 6
 				local toMoveY = deltaY / 6
+
 
 				hero.x = math.round( hero.x + toMoveX ) 
 				hero.y = math.round( hero.y + toMoveY )
@@ -95,7 +108,18 @@ function HClass.createHero()
 	--hero = display.newRect( 0, 0, 50, 150 )
 	--width = 127, height = 98
 	--hero = display.newImageRect(levelSpriteSheet, 1, 127, 98 )
-	hero = display.newImage('img/hog.png' )
+
+	local pigSheet, pigData = resources.loadPigResources()
+	hero = display.newSprite( pigSheet, {
+		{name = 'fly', start = 1, count = 15},
+		{name = 'flyLeft', start = 21, count = 5, loopCount = 1},
+		{name = 'flyRight', start = 16, count = 5, loopCount = 1},
+	}
+	)
+	hero:setSequence( 'fly' )
+	hero:play()
+
+	--hero = display.newImage('img/hog.png' )
 	physics.addBody( hero, 'static', {filter = collisions.heroFilter } )
 	Runtime:addEventListener( "touch", HClass )
 	Runtime:addEventListener( "enterFrame", HClass )

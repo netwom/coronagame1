@@ -66,7 +66,7 @@ function lvl.start()
 end
 
 function lvl.destroy()
-	
+	EnemiesCreator.destroy()
 end
 
 function lvl.getEnemies()

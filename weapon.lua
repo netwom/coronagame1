@@ -1,5 +1,6 @@
 local collisions = require('collisions')
 local physics = require('physics')
+local levelLayers = require( 'levellayers' )
 
 local CWeapon = {}
 local weaponSpeed = 2500
@@ -26,12 +27,16 @@ function CWeapon.explode(x, y)
 	  }  --if defining more sequences, place a comma here and proceed to the next sequence sub-table
 	 
 	}
+	local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
 	local explosion = display.newSprite(explosionSpriteSheet, sequenceData)
+	explosionLayer:insert(explosion)
 	explosion.x = x
 	explosion.y = y
 	explosion:play()
 	function removeObject()
-		explosion:removeSelf()
+		if (explosion and explosion.isVisible) then
+			explosion:removeSelf()
+		end
 	end
 	timerId = timer.performWithDelay( timeout, removeObject, 1)
 end

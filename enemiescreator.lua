@@ -1,6 +1,7 @@
 local COneEnemy = require( 'oneenemy' )
 
 local EnemiesCreator = {}
+local timers = {}
 
 function EnemiesCreator.create(levelConfig)
 	local allEnemies = {}
@@ -12,7 +13,7 @@ function EnemiesCreator.create(levelConfig)
 			allEnemies[#allEnemies + 1] = oneEnemy
 			bunchEnemies[#bunchEnemies + 1] = oneEnemy
 		end
-		timer.performWithDelay( bunch.timeout, function()
+		local tm = timer.performWithDelay( bunch.timeout, function()
 				for k=1,#bunchEnemies do
 					local enemy = bunchEnemies[k]
 					enemy.x = bunch.startPosition[1]
@@ -23,8 +24,16 @@ function EnemiesCreator.create(levelConfig)
 						end, 1 )
 				end
 			end, 1)
+		timers[#timers + 1] = tm
 	end
 	return allEnemies
+end
+
+function EnemiesCreator.destroy()
+	for i=1,#timers do
+		timer.cancel( timers[i] )		
+	end
+	timers = {}
 end
 
 return EnemiesCreator

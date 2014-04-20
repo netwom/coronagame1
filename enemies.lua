@@ -77,12 +77,12 @@ function CEnemies.destroy()
 	Runtime:removeEventListener( "preCollision", onCollision )
 	if (currentLevelObject) then
 		currentLevelObject.destroy()
-		for k, v in pairs(allEnemies) do
-			if (v.isVisible) then
-				v:removeSelf( )
-			end
-			allEnemies[k] = nil
-		end
+		--for k, v in pairs(allEnemies) do
+		--	if (v.isVisible) then
+		--		v:removeSelf( )
+		--	end
+		--	allEnemies[k] = nil
+		--end
 	end
 	if (checkEnemiesDestroyedTimer) then
 		timer.cancel( checkEnemiesDestroyedTimer )
@@ -92,6 +92,14 @@ function CEnemies.destroy()
 		local enemyFire = CEnemies.enemyFire
 		currentLevelObject:removeEventListener( 'enemyFire', enemyFire )
 	end
+
+	print('real destroy enemies ' .. #allEnemies)
+	for i=1,#allEnemies do
+		local oneEnemy = allEnemies[i]
+		oneEnemy:destroy()
+		allEnemies[i] = nil
+	end
+
 end
 
 return CEnemies
