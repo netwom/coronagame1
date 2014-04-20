@@ -111,9 +111,9 @@ function HClass.createHero()
 
 	local pigSheet, pigData = resources.loadPigResources()
 	hero = display.newSprite( pigSheet, {
-		{name = 'fly', start = 1, count = 15},
-		{name = 'flyLeft', start = 21, count = 5, loopCount = 1},
-		{name = 'flyRight', start = 16, count = 5, loopCount = 1},
+		{name = 'fly', start = 1, count = 15, time = 500},
+		{name = 'flyLeft', start = 21, count = 5, loopCount = 1, time = 300},
+		{name = 'flyRight', start = 16, count = 5, loopCount = 1, time = 300},
 	}
 	)
 	hero:setSequence( 'fly' )

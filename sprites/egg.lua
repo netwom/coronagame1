@@ -289,6 +289,14 @@ function getSpriteSheetData()
                 spriteTrimmed = true,
                 textureRotated = false
             },
+            {
+                name = "weapon.png",
+                spriteColorRect = { x = 0, y = 0, width = 69, height = 72 },
+                textureRect = { x = 102, y = 560, width = 69, height = 72 },
+                spriteSourceSize = { width = 69, height = 72 },
+                spriteTrimmed = false,
+                textureRotated = false
+            },
         }
     }
     return sheet

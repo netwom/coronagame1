@@ -1,3 +1,4 @@
+local physics = require('physics')
 ----------------------------------------------------------------------------------
 --      Scene Name
 --      Scene notes
@@ -53,6 +54,7 @@ end
 -- Called immediately after scene has moved onscreen:
 function scene:enterScene( event )
         local group = self.view
+        physics:start( )
 
         -----------------------------------------------------------------------------
 
@@ -60,9 +62,10 @@ function scene:enterScene( event )
 
         -----------------------------------------------------------------------------
 
-        local egg = require( 'enemies.chicken' ).create()
+        local egg = require( 'enemies.egg' ).create()
         egg.x = 100
         egg.y = 100
+        egg.startFiring()
         
 
 end

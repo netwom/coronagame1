@@ -1,4 +1,7 @@
 local resources = require('resources')
+local physics = require('physics')
+local collisions = require('collisions')
+local levelLayers = require('levellayers')
 
 local egg = {}
 
@@ -20,6 +23,20 @@ function egg.create()
 	end
 
 	function enemy.fireEnded(event)
+		if (event.phase == 'bounce') then
+			local weapon = display.newSprite( eggSheet, {
+				name = 'weapon', start = eggData:find('weapon.png').newId, count = 1
+				})
+
+			local enemiesLayer, heroLayer, weaponLayer, explosionLayer, backgroundLayer = levelLayers.get()
+			weaponLayer:insert(weapon)
+
+			weapon.x = enemy.x
+			weapon.y = enemy.y
+
+			physics.addBody( weapon, 'dynamic', {filter = collisions.enemyWeaponFilter } )
+			weapon:setLinearVelocity( 0, 500 )
+		end
 		if (event.phase == 'ended') then
 			enemy:setSequence( 'fly' )
 			enemy:play()
